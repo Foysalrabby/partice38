@@ -10,5 +10,4 @@ const Shipment = () => {
         </div>
     );
 };
-
 export default Shipment;

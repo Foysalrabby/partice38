@@ -7,7 +7,7 @@ const Home1 = (props) => {
     
     return (
         <div>
-            <h2>this is home{count} </h2>
+           
             <Category count={count}></Category>
         </div>
     );

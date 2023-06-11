@@ -12,7 +12,7 @@ export const categorycontext=createContext();
 
 function App() {
 
-  const [count,setcount]=useState(0);
+  const [count,setcount]=useState('laptop');
 
   return (
     <categorycontext.Provider value={[count,setcount]}>
@@ -29,9 +29,10 @@ function App() {
       <Routes>
       <Route  path="/about/:friendID" element={<About></About>} /> 
       </Routes>
-      <Home1 ></Home1> 
+       
      {/* <Header  setcount={setcount}></Header> */}
      <Header></Header>
+     <Home1 ></Home1>
      <Shipment></Shipment>
     </categorycontext.Provider>
    

@@ -3,13 +3,13 @@ import { categorycontext } from '../../App';
 
 
 
-const Catgorydeta = () => {
+const Catgorydeta = (props) => {
    
-    const category = useContext(categorycontext);
+    const {name} = props.product;
     return (
         <div>
-            <h3>this is Category detailspage {category}</h3>
-            <p>selected : {category} </p>
+           
+            <p>selected product : {name} </p>
         </div>
     );
 };
