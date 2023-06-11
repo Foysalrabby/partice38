@@ -5,7 +5,7 @@ import Friendbio from '../Friend/Friendbio';
 
 
 const Home = () => {
- const[friends,setfriends] =useState([]);
+ const[friends,setfriends] =useState([""]);
    useEffect(() => {
   fetch('https://jsonplaceholder.typicode.com/users')
   .then(res => res.json())
@@ -14,9 +14,10 @@ const Home = () => {
     return (
         <div>
         {
-            friends.map(frdkey => <Friendbio key={frdkey.key} frdkey={frdkey} ></Friendbio>)
+            friends.map(friends => <Friendbio key = {friends.id} friends={friends} ></Friendbio>)
+           
         }
-         
+     
         </div>
     );
 };

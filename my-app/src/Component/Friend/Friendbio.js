@@ -1,11 +1,11 @@
 import React from 'react';
 import './Friend.css';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Friendbio = (props) => {
-     const {name,email,id}=props.frdkey;
-    console.log(props.frdkey);
-    let {friendID} = useParams();
+const Friendbio=(props)=> {
+     const {name,email,id} = props.friends;
+    //console.log(props.friends);
+   
     return (
         <div className="stylekdf" >
         <h5>Name :{name}</h5>
